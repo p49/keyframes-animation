@@ -1,0 +1,66 @@
+
+
+
+body {
+ 	padding: 50px; 
+ 	background: #000;
+}
+ 
+.box {
+  display: inline-block;
+  background-color: lightseagreen;
+  width: 200px;
+  height: 200px; 
+  margin-left: 25%;	
+  animation-name: myframes;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.8s;
+  animation-iteration-count: 2;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+/* 	animation: myframes 2s ease-in-out 0s infinite; -- short hand */
+}
+
+
+
+
+
+/*
+@keyframes myframes {
+  from {
+    height: 200px;
+  }
+  to {
+    height: 600px;
+    background-color: orange;
+  }
+}
+*/
+
+
+@keyframes myframes {
+  
+  0% {
+    height: 200px;
+  }
+  
+  30%, 100%  {
+    height: 200px;
+    background-color: cornflowerblue;
+    width: 50%;
+  }
+  
+  70% {
+    height: 450px;
+    border-radius: 50%;
+    background-color: orchid;
+  }
+  
+  100% {
+    height: 650px;
+    border-radius: 50%;
+    background-color: deeppink;
+  }
+}
